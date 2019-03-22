@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+.news {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 16px;
+    background-color: #ffffff;
+    display: inline-block;
+    box-shadow: 10px 10px 5px grey;
+    transition: all .2s ease-in-out;
+}
+.news:hover{
+    transform: scale(1.05);
+}
+.news * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.news img {
+    width: 100%;
+    vertical-align: top;
+    height: 50px;
+}
+
+.news div {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 25px 55px;
+    position: relative;
+    height:400px
+}
+.news div:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.news div a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #008CBA;
+    color: #fff;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size:1.2em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+    border-radius:0.15em;
+    background-color: white;
+    color: black;
+}
+.news div a:hover {
+    opacity: 1;
+    background-color: #008CBA;
+    color: white;
+}
+.news h2 {
+    margin: 0 0 10px;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+.news p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    text-overflow: ellipsis;
+    oveflow:hidden;
+}
+
+
+.index-image{
+    height: 300px;
+    width:300px;
+    float: none;
+    margin: 0 auto;
+    margin-top:30px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.index-image img{
+     max-width:100%;
+     max-height:100%;
+ }

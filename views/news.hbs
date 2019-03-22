@@ -1,0 +1,16 @@
+<h1 style="text-align: center; padding: 10px;">The colour on the top of each card represents the sentiment of the news.</h1>
+<h2 style="text-align: center;padding: -13px;margin: 0 auto;padding-left: 30px;margin-bottom: 30px;">Red means sentiment is negative. Yellow means its neutral to positive and green means positive news.</h2>
+<h4 style="text-align: center;padding: -13px;margin: 0 auto;padding-left: 30px;margin-bottom: 30px;">Because It's a demo Key. it will alwasy redirect to Apple's news.</h4>
+<div class="container">
+
+{{#each news}}
+<div class="news">
+    <img src="{{image}}" alt="sample88" />
+    <div>
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <a href="{{url}}" class="read-more info">Read More</a>
+    </div>
+</div>
+{{/each}}
+</div>
